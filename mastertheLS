@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ls -pt | grep -vE '^\.|^..$' | awk '{gsub(/\//, "/", $0); printf "%s,", $0}' | sed 's/,$//'
+
+
+

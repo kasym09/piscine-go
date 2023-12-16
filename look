@@ -1,0 +1,1 @@
+find . \( -type d -o -type f \) \( -name 'a*' -o -name '*z' -o -name 'z*a!' \)
